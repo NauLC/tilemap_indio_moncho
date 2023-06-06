@@ -10,6 +10,7 @@ export default class Precarga extends Phaser.Scene {
     // load assets
     this.load.tilemapTiledJSON("map", "./public/tilemaps/basic.json");
     this.load.tilemapTiledJSON("map2", "./public/tilemaps/nivel4.json");
+    this.load.tilemapTiledJSON("map3", "./public/tilemaps/nivel5.json");
     this.load.image("tilesFondo", "./public/images/sky_atlas.png");
     this.load.image("tilesPlataforma", "./public/images/platform_atlas.png");
     this.load.image("bomb", "./public/images/bomb.png");
@@ -48,6 +49,6 @@ export default class Precarga extends Phaser.Scene {
     });
 
     // init scene juego
-    this.scene.start("juego");
+    this.scene.start("nivel3");
   }
 }
