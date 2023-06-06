@@ -131,7 +131,7 @@ export default class nivel2 extends Phaser.Scene {
       );
   
       this.timer = 120;
-      this.timeText = this.add.text(750 , 20, this.timer, {
+      this.timeText = this.add.text(730 , 20, this.timer, {
         fontSize: "35px",
         fontStyle: "bold",
         fill: "#FFFFFF",
@@ -208,9 +208,9 @@ export default class nivel2 extends Phaser.Scene {
         y: "este es un dato de muestra",
         z: "este es otro atributo enviado a otro escena",
       });
-      //this.scene.start("nivel2",{
-        //cantidadEstrellas:this.cantidadEstrellas
-      //});
+      this.scene.start("nivel3",{
+        cantidadEstrellas:this.cantidadEstrellas
+      });
     }
     
   
