@@ -1,5 +1,5 @@
 # Phaser 3 Template
-Indio_Moncho
+Indio_Moncho,
 Este juego contiene:
 -1 enemigo
 -1 objeto que te elimina
