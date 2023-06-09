@@ -87,7 +87,7 @@ export default class nivel3 extends Phaser.Scene {
             break;
           }
           case "enemy": {
-            const enemy = this.enemys.create(x, y, "enemy").setScale(0.10).setBounce(1, 1);
+            const enemy = this.enemys.create(x, y, "enemy").setBounce(1, 1).setScale(0.090);
             break;
           }
         }
@@ -167,7 +167,7 @@ export default class nivel3 extends Phaser.Scene {
       // update game objects
       // check input
       //move left
-      if (this.cantEstrellas > 12){
+      if (this.cantEstrellas > 22){
         this.scene.start("Win");
       }
       if (this.gameOver){
@@ -213,8 +213,7 @@ export default class nivel3 extends Phaser.Scene {
       this.scene.restart();
     }
     enemyKill(jugador, enemys) {
-        
-        this.scene.restart();
+         this.scene.restart();
       }
     
   
