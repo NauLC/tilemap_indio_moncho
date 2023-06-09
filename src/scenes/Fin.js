@@ -13,14 +13,14 @@ export default class Fin extends Phaser.Scene {
     // take data passed from other scenes
     // data object param {}
     console.log(data);
-    this.cantidadEstrellas = data.cantidadEstrellas;
+    this.cantEstrellas = data.cantidadEstrellas;
   }
 
   create() {
     this.cantidadEstrellasTexto = this.add.text(
       15,
       15,
-      "Estrellas recolectadas: " + this.cantidadEstrellas,
+      "Estrellas recolectadas: " + this.cantEstrellas,
       { fontSize: "15px", fill: "#FFFFFF" }
     );
   }

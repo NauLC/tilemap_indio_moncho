@@ -15,7 +15,9 @@ export default class Precarga extends Phaser.Scene {
     this.load.image("tilesPlataforma", "./public/images/platform_atlas.png");
     this.load.image("bomb", "./public/images/bomb.png");
     this.load.image("star", "./public/images/star.png");
-
+    this.load.image("win", "./public/images/win.png");
+    this.load.image("gameover", "./public/images/gameover.png");
+    this.load.image("enemy", "./public/images/enemy.png");
     this.load.spritesheet("dude", "./public/images/dude.png", {
       frameWidth: 32,
       frameHeight: 48,
@@ -49,6 +51,6 @@ export default class Precarga extends Phaser.Scene {
     });
 
     // init scene juego
-    this.scene.start("juego");
+    this.scene.start("nivel3");
   }
 }

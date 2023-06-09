@@ -12,7 +12,8 @@ export default class Juego extends Phaser.Scene {
     // init variables
     // take data passed from other scenes
     // data object param {}
-
+    this.gameOver = false
+    
     this.cantidadEstrellas = 0;
     console.log("Prueba !");
   }
@@ -148,6 +149,10 @@ export default class Juego extends Phaser.Scene {
     // update game objects
     // check input
     //move left
+    
+    if (this.gameOver){
+      this.scene.start("GameOver");
+    }
     if (this.cursors.left.isDown) {
       this.jugador.setVelocityX(-160);
       this.jugador.anims.play("left", true);
